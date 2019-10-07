@@ -1,0 +1,448 @@
+!SESSION 2019-10-03 09:22:53.436 -----------------------------------------------
+eclipse.buildId=3.9.8.201903260800-RELEASE-e411
+java.version=11.0.3
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.jboss.tools.project.examples 4 0 2019-10-03 09:23:04.753
+!MESSAGE bundle org.jboss.tools.project.examples:1.3.1.v20130112-0559-H131-Final (1097)BundleComponentActivator : Unexpected failure enabling component holder org.jboss.tools.project.examples.DownloadRuntimes
+!STACK 0
+java.lang.NoClassDefFoundError: org/jboss/tools/runtime/ui/IDownloadRuntimes
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:279)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:716)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:639)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:607)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:587)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:566)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.initDependencyManagers(AbstractComponentManager.java:999)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1026)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:936)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:756)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:666)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:432)
+	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:665)
+	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:339)
+	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:381)
+	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:49)
+	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:263)
+	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:139)
+	at org.apache.felix.scr.impl.AbstractExtender.addingBundle(AbstractExtender.java:49)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:475)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:944)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:233)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:140)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:132)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:194)
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:484)
+	at org.eclipse.osgi.container.Module.start(Module.java:475)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+Caused by: java.lang.ClassNotFoundException: org.jboss.tools.runtime.ui.IDownloadRuntimes cannot be found by org.jboss.tools.project.examples_1.3.1.v20130112-0559-H131-Final
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:511)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 52 more
+
+!ENTRY org.jboss.tools.ws.creation.ui 4 0 2019-10-03 09:23:05.065
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.ws.creation.ui [1131]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.ws.ui
+    -> Bundle-SymbolicName: org.jboss.tools.ws.ui; bundle-version="1.3.1.v20130112-0330-H156-Final"; singleton:="true"
+       org.jboss.tools.ws.ui [1134]
+         Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.jboss.tools.ws.ui 4 0 2019-10-03 09:23:05.121
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.ws.ui [1134]
+  Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY com.ibm.issw.migr.osgi.liberty 4 0 2019-10-03 09:23:05.142
+!MESSAGE bundle com.ibm.issw.migr.osgi.liberty:1.0.0.201803091702 (1237)Component descriptor entry 'wsadmin.xml' not found
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig 4 0 2019-10-03 09:23:05.144
+!MESSAGE bundle com.ibm.issw.migr.osgi.wasconfig:1.0.0.201803091702 (1239)Component descriptor entry 'cell.xml' not found
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.jboss 4 0 2019-10-03 09:23:05.145
+!MESSAGE bundle com.ibm.issw.migr.osgi.wasconfig.jboss:1.0.3.201803091702 (1240)Component descriptor entry 'component.xml' not found
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.was 4 0 2019-10-03 09:23:05.146
+!MESSAGE bundle com.ibm.issw.migr.osgi.wasconfig.was:1.0.0.201803091702 (1241)Component descriptor entry 'cell.xml' not found
+
+!ENTRY com.ibm.issw.migr.osgi.wasconfig.wls 4 0 2019-10-03 09:23:05.147
+!MESSAGE bundle com.ibm.issw.migr.osgi.wasconfig.wls:1.0.0.201803091702 (1242)Component descriptor entry 'cell.xml' not found
+
+!ENTRY com.ibm.issw.migr.osgi.wsadmin 4 0 2019-10-03 09:23:05.168
+!MESSAGE bundle com.ibm.issw.migr.osgi.wsadmin:1.0.0.201803091702 (1243)Component descriptor entry 'wsadmin.xml' not found
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-03 09:24:36.460
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-10-03 09:24:38.412
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-03 09:24:38.412
+!MESSAGE A conflict occurred for ALT+CTRL+P:
+Binding(ALT+CTRL+P,
+	ParameterizedCommand(Command(org.eclipse.m2e.profiles.ui.commands.selectMavenProfileCommand,Select Maven Profiles,
+		,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10c88d11,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+P,
+	ParameterizedCommand(Command(org.jboss.tools.maven.ui.commands.selectMavenProfileCommand,Select Maven Profiles,
+		,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75f1c170,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-10-03 09:24:38.412
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@63fa0b9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3316aef6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-10-03 09:24:41.676
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-10-03 09:24:41.676
+!MESSAGE Could not load repository template extension contributed by 'org.jboss.tools.common.mylyn' with connectorKind 'jira'
+
+!ENTRY org.eclipse.ui 2 2 2019-10-03 09:24:43.008
+!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2019-10-03 09:24:43.008
+!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2019-10-03 09:24:43.009
+!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.jface.text 2 0 2019-10-03 09:24:45.696
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.jboss.ide.eclipse.archives.webtools 4 0 2019-10-03 09:24:48.222
+!MESSAGE /home/user/Music/EurekaServer/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.32 (No such file or directory)
+!STACK 0
+java.io.FileNotFoundException: /home/user/Music/EurekaServer/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.32 (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.jboss.ide.eclipse.archives.webtools.filesets.FilesetUtil.saveFilesets(FilesetUtil.java:107)
+	at org.jboss.ide.eclipse.archives.webtools.filesets.NewServerFilesetHandler.<init>(NewServerFilesetHandler.java:51)
+	at org.jboss.ide.eclipse.archives.webtools.filesets.NewServerFilesetHandler.getDefault(NewServerFilesetHandler.java:35)
+	at org.jboss.ide.eclipse.archives.webtools.IntegrationPlugin.start(IntegrationPlugin.java:44)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:815)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:808)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:765)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1005)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:357)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:589)
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.start(EquinoxBundle.java:431)
+	at org.jboss.tools.as.runtimes.integration.internal.JBossASHandler.<clinit>(JBossASHandler.java:69)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:206)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.loadOneDeclaredRuntimeDetector(RuntimeExtensionManager.java:170)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.loadDeclaredRuntimeDetectors(RuntimeExtensionManager.java:143)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.loadInitializedRuntimeDetectors(RuntimeExtensionManager.java:81)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.getRuntimeDetectors(RuntimeExtensionManager.java:88)
+	at org.jboss.tools.runtime.core.RuntimeCoreActivator.getRunt
+!ENTRY com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2019-10-03 09:24:55.099
+!MESSAGE Error creating server instance with command:
+ "/home/user/spring-tool-suite-3.9.8.RELEASE-e4.11.0-linux-gtk-x86_64/sts-bundle/pivotal-tc-server/developer-4.0.4.RELEASE/tcserver create base-instance -t base --force -v 9.0.13.B.RELEASE". Check access permission for the directory /home/user/spring-tool-suite-3.9.8.RELEASE-e4.11.0-linux-gtk-x86_64/sts-bundle/pivotal-tc-server/developer-4.0.4.RELEASE and its files and subdirectories.
+!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2019-10-03 09:24:55.099
+!MESSAGE The instance creation command failed and returned code 1
+!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2019-10-03 09:24:55.099
+!MESSAGE Output of the instance creation command:
+Creating instance 'base-instance' at '/home/user/spring-tool-suite-3.9.8.RELEASE-e4.11.0-linux-gtk-x86_64/sts-bundle/pivotal-tc-server/instances/base-instance'
+  Setting JAVA_HOME for instance to '/usr/lib/jvm/java-11-openjdk-amd64'
+  Using separate layout
+  Applying template 'base'
+  Applying template 'base-tomcat-9'
+'create' command failed. com.springsource.tcruntime.instance.internal.templates.FragmentApplicationFailedException: java.io.IOException: No space left on device
+
+
+!ENTRY org.springsource.ide.eclipse.commons.configurator 4 0 2019-10-03 09:24:55.100
+!MESSAGE The server could not be created.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error creating server instance with command:
+ "/home/user/spring-tool-suite-3.9.8.RELEASE-e4.11.0-linux-gtk-x86_64/sts-bundle/pivotal-tc-server/developer-4.0.4.RELEASE/tcserver create base-instance -t base --force -v 9.0.13.B.RELEASE". Check access permission for the directory /home/user/spring-tool-suite-3.9.8.RELEASE-e4.11.0-linux-gtk-x86_64/sts-bundle/pivotal-tc-server/developer-4.0.4.RELEASE and its files and subdirectories.
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServerUtil.handleResult(TcServerUtil.java:158)
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServerUtil.executeInstanceCreation(TcServerUtil.java:111)
+	at com.vmware.vfabric.ide.eclipse.tcserver.internal.core.TcServer21ServerHandlerCallback.configureServer(TcServer21ServerHandlerCallback.java:48)
+	at org.springsource.ide.eclipse.commons.internal.configurator.server.ServerDescriptor$ServerHandlerCallbackDelegate.configureServer(ServerDescriptor.java:40)
+	at org.springsource.ide.eclipse.commons.configurator.ServerHandler.createServer(ServerHandler.java:318)
+	at org.springsource.ide.eclipse.commons.configurator.ServerHandler.createServer(ServerHandler.java:157)
+	at org.springsource.ide.eclipse.commons.internal.configurator.server.ConfigurableServerExtension.configure(ConfigurableServerExtension.java:70)
+	at org.springsource.ide.eclipse.commons.internal.configurator.ConfiguratorImporter$4.run(ConfiguratorImporter.java:439)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: The instance creation command failed and returned code 1
+Contains: Output of the instance creation command:
+Creating instance 'base-instance' at '/home/user/spring-tool-suite-3.9.8.RELEASE-e4.11.0-linux-gtk-x86_64/sts-bundle/pivotal-tc-server/instances/base-instance'
+  Setting JAVA_HOME for instance to '/usr/lib/jvm/java-11-openjdk-amd64'
+  Using separate layout
+  Applying template 'base'
+  Applying template 'base-tomcat-9'
+'create' command failed. com.springsource.tcruntime.instance.internal.templates.FragmentApplicationFailedException: java.io.IOException: No space left on device
+
+!SUBENTRY 1 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2019-10-03 09:24:55.101
+!MESSAGE Error creating server instance with command:
+ "/home/user/spring-tool-suite-3.9.8.RELEASE-e4.11.0-linux-gtk-x86_64/sts-bundle/pivotal-tc-server/developer-4.0.4.RELEASE/tcserver create base-instance -t base --force -v 9.0.13.B.RELEASE". Check access permission for the directory /home/user/spring-tool-suite-3.9.8.RELEASE-e4.11.0-linux-gtk-x86_64/sts-bundle/pivotal-tc-server/developer-4.0.4.RELEASE and its files and subdirectories.
+!SUBENTRY 2 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2019-10-03 09:24:55.104
+!MESSAGE The instance creation command failed and returned code 1
+!SUBENTRY 2 com.vwmare.vfabric.ide.eclipse.tcserver.core 4 0 2019-10-03 09:24:55.104
+!MESSAGE Output of the instance creation command:
+Creating instance 'base-instance' at '/home/user/spring-tool-suite-3.9.8.RELEASE-e4.11.0-linux-gtk-x86_64/sts-bundle/pivotal-tc-server/instances/base-instance'
+  Setting JAVA_HOME for instance to '/usr/lib/jvm/java-11-openjdk-amd64'
+  Using separate layout
+  Applying template 'base'
+  Applying template 'base-tomcat-9'
+'create' command failed. com.springsource.tcruntime.instance.internal.templates.FragmentApplicationFailedException: java.io.IOException: No space left on device
+
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2019-10-03 09:24:58.821
+!MESSAGE Exception saving preferences to: /home/user/Music/EurekaServer/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs.
+!STACK 0
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.core.internal.preferences.SafeFileOutputStream.flush(SafeFileOutputStream.java:118)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:281)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1072)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1048)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:389)
+	at org.eclipse.ui.internal.browser.WebBrowserPreference.setInternalWebBrowserHistory(WebBrowserPreference.java:102)
+	at org.eclipse.ui.internal.browser.BrowserViewer.addToHistory(BrowserViewer.java:715)
+	at org.eclipse.ui.internal.browser.BrowserViewer.setURL(BrowserViewer.java:694)
+	at org.eclipse.ui.internal.browser.BrowserViewer.setURL(BrowserViewer.java:298)
+	at org.springsource.ide.eclipse.commons.browser.swt.StsBrowserEditor.createPartControl(StsBrowserEditor.java:71)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:102)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench
+!ENTRY org.eclipse.ui.browser 4 0 2019-10-03 09:24:58.925
+!MESSAGE Exception saving preferences to: /home/user/Music/EurekaServer/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception saving preferences to: /home/user/Music/EurekaServer/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:285)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1072)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1048)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:389)
+	at org.eclipse.ui.internal.browser.WebBrowserPreference.setInternalWebBrowserHistory(WebBrowserPreference.java:102)
+	at org.eclipse.ui.internal.browser.BrowserViewer.addToHistory(BrowserViewer.java:715)
+	at org.eclipse.ui.internal.browser.BrowserViewer.setURL(BrowserViewer.java:694)
+	at org.eclipse.ui.internal.browser.BrowserViewer.setURL(BrowserViewer.java:298)
+	at org.springsource.ide.eclipse.commons.browser.swt.StsBrowserEditor.createPartControl(StsBrowserEditor.java:71)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:102)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5927)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:177)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:652)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:616)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:791)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:404)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1240)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3317)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$9(WorkbenchPage.java:3216)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3213)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3177)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3158)
+	at org.springsource.ide.eclipse.dashboard.ui.actions.ShowDashboardPageAction$1.runInUIThread(ShowDashboardPageAction.java:77)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:98)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4582)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+Caused by: java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.core.internal.preferences.SafeFileOutputStream.flush(SafeFileOutputStream.java:118)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:281)
+	... 93 more
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2019-10-03 09:25:34.783
+!MESSAGE Exception saving preferences to: /home/user/Music/EurekaServer/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs.
+!STACK 0
+java.io.IOException: No space left on device
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:354)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.core.internal.preferences.SafeFileOutputStream.flush(SafeFileOutputStream.java:118)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:281)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1072)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1048)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:389)
+	at org.eclipse.jdt.internal.launching.LaunchingPlugin$1.saving(LaunchingPlugin.java:571)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:387)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:204)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:207)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1172)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2338)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:509)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-10-03 09:25:34.787
+!MESSAGE Exception saving preferences to: /home/user/Music/EurekaServer/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception saving preferences to: /home/user/Music/EurekaServer/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:285)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1072)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1048)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	
